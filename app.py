@@ -18,7 +18,7 @@ st.markdown('''
 <h6>Which one is the best Regularization for a particular dataset?\n
 <ol><li>Ridge</li><li>Lasso</li></ol>''', unsafe_allow_html=True)
 
-dataset_name = st.sidebar.selectbox('Select Dataset',("Boston","Iris","Breast Cancer","Wine"))
+dataset_name = st.selectbox('Select Dataset',("Boston","Iris","Breast Cancer","Wine"))
 st.write('You Selected' + ' ' + dataset_name + ' ' +"Dataset" )
 
 def get_dataset(dataset_name):
