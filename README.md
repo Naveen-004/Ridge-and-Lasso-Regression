@@ -7,4 +7,34 @@ There are two types of Regularizations
 1. Ridge regularization
 2. Lasso regularization
 
-Here, I deployed a web application called <a href='https://ml-regularization.herokuapp.com/'>ml-regularization</a> which is used to perform regularization and finds best regularization using machine learning.
+## Table of Contents
+
+-   [Tools](#Tools)
+-   [Datasets](#Datasets)
+-   [Impact](#Impact)
+-   [Clone](#Clone)
+-   [License](#License)
+
+## Tools :
+- ```Python```, ```Numpy```, ```Pandas```, ```Matplotlib```, ```Seaborn```, ```Scikit-learn```, ```Streamlit```, ```Html``` and ```Heroku```
+
+## Datasets :
+- Boston          :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html)
+- Iris            :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html)
+- Wine            :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html)
+- Breast Cancer   :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)
+
+## Impact :
+<p>Here, I deployed a web application called <a href='https://ml-regularization.herokuapp.com/'>ml-regularization</a> which is used to perform regularization and finds best regularization for a given dataset using machine learning.</p>
+
+## Clone :
+```
+git clone https://github.com/Naveen-004/Ridge-and-Lasso-Regression.git
+```
+- To run on your local machine, make sure you have installed every requirements.
+```
+pip install streamlit
+```
+## License
+```MIT```
+
