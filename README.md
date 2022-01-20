@@ -17,7 +17,12 @@ There are two types of Regularizations
 -   [License](#License)
 
 ## Overview :
-
+<p>Website - <a href='https://ml-regularization.herokuapp.com/'>https://ml-regularization.herokuapp.com/</a></p>
+<img src = 'https://github.com/Naveen-004/Ridge-and-Lasso-Regression/blob/master/img/scr1.png'>
+<img src = 'https://github.com/Naveen-004/Ridge-and-Lasso-Regression/blob/master/img/scr2.png'>
+<img src = 'https://github.com/Naveen-004/Ridge-and-Lasso-Regression/blob/master/img/scr3.png'>
+<img src = 'https://github.com/Naveen-004/Ridge-and-Lasso-Regression/blob/master/img/scr4.png'>
+<img src = 'https://github.com/Naveen-004/Ridge-and-Lasso-Regression/blob/master/img/scr5.png'>
 
 ## Tools :
 - ```Python```, ```Numpy```, ```Pandas```, ```Matplotlib```, ```Seaborn```, ```Scikit-learn```, ```Streamlit```, ```Html``` and ```Heroku```
