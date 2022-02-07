@@ -32,6 +32,8 @@ There are two types of Regularizations
 - Iris            :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html)
 - Wine            :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html)
 - Breast Cancer   :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)
+- Diabetes        :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html)
+- Digits          :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html)
 
 ## Impact :
 <p>Here, I deployed a web application called <a href='https://ml-regularization.herokuapp.com/'>ml-regularization</a> which is used to perform regularization and finds best regularization for a given dataset using machine learning.</p>
