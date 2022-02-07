@@ -14,11 +14,11 @@ from sklearn.model_selection import train_test_split
 st.title('Ridge and Lasso Regression')
         
 st.markdown('''
-<h1>Explore Regularization</h1>
-<h6>Which one is the best Regularization for a particular dataset?\n
-<ol><li>Ridge</li><li>Lasso</li></ol>''', unsafe_allow_html=True)
+<h2>Explore Regularization</h2>
+<h6>Which one is the best Regularization for a particular dataset(sklearn datasets)?\n
+<ol><b><li>Ridge</li><li>Lasso</li></b></ol>''', unsafe_allow_html=True)
 
-dataset_name = st.selectbox('Select Dataset',("Boston","Iris","Breast Cancer","Wine"))
+dataset_name = st.selectbox('Select Dataset',("Boston","Iris","Breast Cancer","Diabetes","Digits","Wine"))
 st.write('You Selected' + ' ' + dataset_name + ' ' +"Dataset" )
 
 def get_dataset(dataset_name):
@@ -42,7 +42,21 @@ def get_dataset(dataset_name):
         dataset.columns = df.feature_names
         dataset['target'] = df.target
         X = dataset.iloc[:,:-1]
-        y = dataset.iloc[:,-1]        
+        y = dataset.iloc[:,-1]
+    elif dataset_name == 'Diabetes':
+        df = datasets.load_diabetes()
+        dataset =pd.DataFrame(df.data)
+        dataset.columns = df.feature_names
+        dataset['target'] = df.target
+        X = dataset.iloc[:,:-1]
+        y = dataset.iloc[:,-1]
+    elif dataset_name == 'Digits':
+        df = datasets.load_digits()
+        dataset =pd.DataFrame(df.data)
+        dataset.columns = df.feature_names
+        dataset['target'] = df.target
+        X = dataset.iloc[:,:-1]
+        y = dataset.iloc[:,-1]   
     else:
         df = datasets.load_wine()
         dataset =pd.DataFrame(df.data)
@@ -53,9 +67,9 @@ def get_dataset(dataset_name):
     return X, y
 
 X, y = get_dataset(dataset_name)
-st.write("Shape of Features", X.shape)
+st.write("Shape of Features :", X.shape)
 st.write('Overview of Features -', X)
-st.write("Shape of Target", y.shape)
+st.write("Shape of Target :", y.shape)
 st.write('Overview of Target data -', y)
 
 st.write('''As Ridge and Lasso Regression models are how of regularizing the linear models so we first got to prepare a linear model. So now, let’s code for preparing a linear regression model''')
