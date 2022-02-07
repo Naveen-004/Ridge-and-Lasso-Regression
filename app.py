@@ -21,6 +21,7 @@ st.markdown('''
 dataset_name = st.selectbox('Select Dataset',("Boston","Iris","Breast Cancer","Diabetes","Digits","Wine"))
 st.write('You Selected' + ' ' + dataset_name + ' ' +"Dataset" )
 
+@st.cache
 def get_dataset(dataset_name):
     if dataset_name == 'Boston':
         df = datasets.load_boston()
