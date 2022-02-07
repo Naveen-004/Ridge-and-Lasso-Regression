@@ -25,7 +25,7 @@ There are two types of Regularizations
 <img src = 'https://github.com/Naveen-004/Ridge-and-Lasso-Regression/blob/master/img/scr5.png'>
 
 ## Tools :
-- ```Python```, ```Numpy```, ```Pandas```, ```Matplotlib```, ```Seaborn```, ```Scikit-learn```, ```Streamlit```, ```Html``` and ```Heroku```
+- ```Python```, ```Numpy```, ```Pandas```, ```Matplotlib```, ```Seaborn```, ```Scikit-learn```, ```Streamlit```, ```HTML``` and ```Heroku```
 
 ## Datasets :
 - Boston          :   [Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html)
