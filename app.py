@@ -95,7 +95,7 @@ st.write('# Ridge Regression')
 @st.cache # Decorator to cache the function
 def ridge():
     ridge = Ridge() # Initializing the Ridge Regression
-    alpha_val = np.array(range(-999,999))
+    alpha_val = np.array(range(-100,300))
     # GridSearchCV to find the best parameters
     params = {'alpha': alpha_val}
     ridge_reg = GridSearchCV(ridge, params, scoring='neg_mean_squared_error',cv=5)
@@ -116,7 +116,7 @@ st.write('# Lasso Regression')
 @st.cache # Decorator to cache the function
 def lasso():
     lasso = Lasso() # initializing the Lasso Regression
-    alpha_val = np.array(range(-999,999))
+    alpha_val = np.array(range(-100,300))
     # GridSearchCV to find the best parameters
     params = {'alpha': alpha_val}
     lasso_reg = GridSearchCV(lasso, params, scoring='neg_mean_squared_error',cv=5)
